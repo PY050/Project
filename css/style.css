@@ -1,0 +1,96 @@
+/* General styles */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#game-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+/* Title fade in */
+.hide {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hide.show {
+  opacity: 1;
+}
+
+#treats-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.treats {
+  height: 50px;
+  width: 50px;
+}
+
+#hint {
+  margin-top: 30px;
+}
+
+#word-display {
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+#letter-input {
+  max-width: 200px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 10px;
+  font-size: 20px;
+}
+
+/* Style the guess button */
+#guess-button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+#guess-button:hover {
+  background-color: #45a049;
+}
+
+/* Define the mixin */
+/* Apply the mixin to the #play-button */
+#play-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#attribute {
+  font-size: 8px;
+}

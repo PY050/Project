@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Disappearing Treats Game</title>
+  <link rel="stylesheet" href="../css/style.css"> <!-- Link to CSS -->
+  <script src="../Scripts/index.js" defer="defer"></script> <!-- Link to JS -->
+</head>
+<body>
+  <div id="game-container">
+    <header>
+      <h1 class="hide" id="title">Disappearing Treats Game</h1>
+    </header>
+    <main>
+      <div id="treats-images">
+        <img class="treats" id="image1" src="../Images/cake.jpg" alt="Cake">
+        <img class="treats" id="image2" src="../Images/cookie.jpg" alt="Cookie">
+        <img class="treats" id="image3" src="../Images/cupcake.jpg" alt="Cupcake">
+        <img class="treats" id="image4" src="../Images/doughnut.jpg" alt="Doughnut">
+        <img class="treats" id="image5" src="../Images/ice-cream.jpg" alt="Ice Cream">
+        <img class="treats" id="image6" src="../Images/pink-cookie.jpg" alt="Pink cookie">
+      </div>
+
+      <div id="hint"></div>
+
+      <div id="word-display"></div>
+
+      <input type="text" id="letter-input" maxlength="1" placeholder="Guess a letter">
+
+      <button id="guess-button">Guess</button>
+
+      <p id="attempts">Attempts left: 6</p>
+      
+      <p>Guessed letters: <span id="guessed-letters"></span></p>
+
+      <div id="message"></div>
+
+      <button id="play-button">Play</button>
+    </main>
+
+    <footer>
+      <p id="attribute">Images by Freepik</p>
+    </footer>
+  </div>
+
+</body>
+</html>
